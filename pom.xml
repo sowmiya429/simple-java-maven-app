@@ -22,14 +22,12 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.0.2</version>
-        <configuration><configuration>
-					<!-- Configuration needed to avoid build errors-->
-					<compilerArgs>
-						<args>-parameters</args>
-					</compilerArgs>
-					<source>1.8</source>
-					<target>1.8</target>
-					<!-- Configuration needed to avoid build errors-->
+        <configuration>
+	   <compilerArgs>
+		<args>-parameters</args>
+			</compilerArgs>
+			<source>1.8</source>
+			<target>1.8</target>
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
