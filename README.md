@@ -77,11 +77,38 @@ want to connect to maven need plugins
 #GO TO Manage jenkins---> plugin--->available plugin
 ![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/ad3f6991-7635-40dd-9e8b-0b9012f24b26)
 ![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/4f9bf6a2-219d-4cc1-a7c5-dc1a640d7f64)
-#Now you need to tell jenkins where the maven has located
 go to dashboard-->manage jenkins--->tools
 ![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/b9e20ed7-b0e4-4269-bcaa-7ab0a81599be)
 add the location where the maven has installed
 ![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/434b5959-e1e5-4a6c-84a8-6636be184f7a)
 Create the new Freestyle project jenkins_maven11
 ![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/c01d55b6-9d40-4ad0-a8d0-32caed8b96f0)
-
+#Now you need to tell jenkins where the maven has located
+configure Github
+![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/17e2f7d3-1bea-48be-a0d8-00f4437d3a3c)
+Test the maven
+![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/9cf0bf7c-8e57-41d6-9492-41f289f5c66f)
+now build 
+![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/1e31c6ae-3f0c-4cc9-874a-3ca05d7d9a38)
+create post-build actions
+![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/a8af0b9e-71d9-4abf-aaaa-37f2badeb7f7)
+![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/16771331-2395-40bb-aced-349f5e8c6f01)
+In this step create one more build step for creating package
+![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/bc5782af-eabf-4573-b576-6bda86b326d8)
+Build now the package will create
+![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/103f8532-c3e2-4c6c-87f4-a939f826921e)
+now the jar file has been created
+<img width="848" alt="image" src="https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/1fc19200-bef2-4c69-8ae2-f348af4f50d0">
+Last step is to run the jar file using below command
+```
+java -jar target/*.jar
+```
+![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/be09a69b-c44d-4359-a444-1a44b883dc9d)
+Now again buildnow
+![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/88bbe0fb-4a83-43b3-9bae-f4b0ecd16b7b)
+result has comeup
+![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/f7e5eff7-5b2d-4c67-9cd9-eb37fdf39e2b)
+Now create the artifact
+![image](https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/61e7d8ce-a11a-4fbf-8515-d2559b59c4e4)
+after the creating the artifact the link has been provided automatically
+<img width="960" alt="image" src="https://github.com/sowmiya429/simple-java-maven-app/assets/80743760/16449e0d-c45b-4966-b07f-e1cb4587dc7b">
